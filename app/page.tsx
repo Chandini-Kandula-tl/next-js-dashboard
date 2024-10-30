@@ -4,15 +4,14 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import { lusitana } from "./ui/fonts";
-import useFetchUsersData from "./utilis";
 
-const rawData = [
-  { id: 1, name: "John", age: 30 },
-  { id: 2, name: "Jane", age: 25 },
-];
+// const rawData = [
+//   { id: 1, name: "John", age: 30 },
+//   { id: 2, name: "Jane", age: 25 },
+// ];
 
 export default function Page() {
-  const { data, loading, error } = useFetchUsersData(rawData);
+  // const { data, loading, error } = useFetchUsersData(rawData);
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className={styles.shape}>{/* <AcmeLogo /> */}</div>

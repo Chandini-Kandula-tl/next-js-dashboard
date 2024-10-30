@@ -24,6 +24,7 @@ const useFetchUsersData = (rawData?: DataProps[]) => {
 
         setData(rawData ?? mockData);
       } catch (err) {
+        console.log(err);
         setError("An error occurred while fetching data.");
       } finally {
         setLoading(false);
@@ -31,7 +32,7 @@ const useFetchUsersData = (rawData?: DataProps[]) => {
     };
 
     fetchData();
-  }, []);
+  }, [rawData]);
 
   return { data, loading, error };
 };
